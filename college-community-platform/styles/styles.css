@@ -16,7 +16,15 @@ article {
     font-size: 24px; /* Set readable text size */
     line-height: 1.6; /* Improve readability with proper line spacing */
 }
-
+article {
+    background: rgba(255, 255, 255, 0.8); /* Light transparent white background */
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(246, 239, 239, 0.1); /* Optional: Add a subtle shadow for better contrast */
+    font-size: 24px; /* Ensure readable text size */
+    line-height: 1.6; /* Improve readability */
+}
 main {
     padding: 20px;
     font-size: 24px; /* Ensure consistent text size for the main content */

@@ -4,7 +4,7 @@ body {
     padding: 0;
     
     background-color: #f0f8ff; /* Light blue background */
-    background-image: url('../images/background.jpg'); /* Optional background image */
+    background-image: url('./images/background.jpg'); /* Optional background image */
     background-size: cover; /* Ensure the image covers the entire page */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-attachment: fixed; /* Keep the background fixed during scrolling */

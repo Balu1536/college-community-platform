@@ -8,6 +8,21 @@ body {
     background-attachment: fixed; /* Keep the background fixed during scrolling */
     color: #333; /* Ensure text is readable */
 }
+article {
+    background: rgba(255, 255, 255, 0.8); /* Light transparent white background */
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better contrast */
+    font-size: 24px; /* Ensure readable text size */
+    line-height: 1.6; /* Improve readability */
+}
+
+main {
+    padding: 20px;
+    font-size: 24px; /* Ensure consistent text size for the main content */
+    line-height: 1.6; /* Improve readability */
+}
 
 img {
     max-width: 100%; /* Ensures images never exceed their container's width */
@@ -18,7 +33,7 @@ img {
 }
 
 header {
-    background: #35424a;
+    background: #0ce9f5;
     color: #050e64;
     padding: 10px 0;
     text-align: center;
@@ -37,17 +52,6 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-article {
-    background: #ffffff;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 5px;
 }
 
 footer {

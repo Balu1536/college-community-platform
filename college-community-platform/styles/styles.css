@@ -2,13 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
-     /* Light blue background */
     background-image: url('../images/background.jpg'); /* Optional background image */
     background-size: cover; /* Ensure the image covers the entire page */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     background-attachment: fixed; /* Keep the background fixed during scrolling */
     color: #333; /* Ensure text is readable */
+}
+
+img {
+    max-width: 100%; /* Ensures images never exceed their container's width */
+    height: auto; /* Maintains the aspect ratio of the images */
+    display: block; /* Removes extra space below images */
+    margin: 0 auto; /* Centers images if they are block elements */
+    border-radius: 5px; /* Optional: Adds rounded corners to images */
 }
 
 header {

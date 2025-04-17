@@ -1,83 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KSRM College Community Platform</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KSRM College Community Platform: Your hub for student blogs, news, and podcasts." />
+  <title>KSRM College Community Platform</title>
+  <link rel="stylesheet" href="styles/index.css" />
 </head>
 <body>
-    <header>
-        <h1>KSRM College Community Platform</h1>
-        <button id="menuToggle" aria-label="Toggle Navigation">☰</button>
-        <nav>
-            <ul id="navMenu">
-                <li><a href="blog.html">Student Blog</a></li>
-                <li><a href="news.html">College News</a></li>
-                <li><a href="podcasts.html">Podcast Directory</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container">
+      <h1>KSRM College Community Platform</h1>
+      <button id="menuToggle" aria-label="Toggle Navigation Menu">☰</button>
+      <nav id="mainNav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="blog.html">Student Blog</a></li>
+          <li><a href="news.html">College News</a></li>
+          <li><a href="podcasts.html">Podcast Directory</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <h2 style="color:#ae00f3;">Welcome to the KSRM College Community Platform!</h2>
-        <p style="color:#e307f7;">Your hub for student blogs, college news, and podcasts.</p>
+  <main class="main-content">
+    <section class="intro">
+      <div class="container">
+        <h2 class="highlight">Welcome to the KSRM College Community Platform!</h2>
+        <p class="tagline">Your hub for student blogs, college news, and podcasts.</p>
+      </div>
+    </section>
 
+    <section class="about-section">
+      <div class="container">
         <article>
-            <h3>About Us</h3>
-            <p>The KSRM College Community Platform is designed to foster a vibrant community among students, faculty, and alumni. Our mission is to provide a space where individuals can share their thoughts, experiences, and insights through blogs, stay updated with the latest college news, and engage with informative podcasts. We believe in the power of community and collaboration, and we aim to enhance the college experience for everyone involved.</p>
-            
-            <p>Our platform serves as a central hub for students to express themselves creatively and academically. Through the Student Blog section, students can share their personal stories, academic journeys, and extracurricular activities, allowing for a rich exchange of ideas and experiences.</p>
-            
-            <p>In addition to blogs, we provide a dedicated space for College News, where students and faculty can stay informed about important announcements, events, and achievements within the college community. This section aims to keep everyone connected and engaged with the happenings on campus.</p>
-            
-            <p>Our Podcast Directory features a variety of topics, including interviews with faculty, discussions on current trends in education, and student-led initiatives. Podcasts are a great way to learn and connect with others, and we encourage students to contribute their voices to this growing medium.</p>
-            
-            <p>We also believe in providing resources and opportunities for personal and professional development. The platform will regularly feature workshops, webinars, and networking events that help students build skills and connect with industry professionals.</p>
-            
-            <p>Join us in building a supportive and dynamic community at KSRM College. Whether you’re looking to share your story, stay informed, or connect with others, the KSRM College Community Platform is here for you!</p>
+          <h3>About Us</h3>
+          <p>The KSRM College Community Platform fosters a vibrant community among students, faculty, and alumni. Our mission is to offer a space for sharing stories, updates, and insights through blogs, news, and podcasts.</p>
+          <p>Students can share personal journeys and achievements in the <strong>Student Blog</strong> section, stay informed via the <strong>College News</strong> portal, and enjoy insightful discussions in the <strong>Podcast Directory</strong>.</p>
+          <p>We also promote personal and professional growth through regular workshops, webinars, and networking events.</p>
+          <p>Join us in building a collaborative and supportive environment at KSRM College!</p>
         </article>
+      </div>
+    </section>
 
-        <section>
-            <h3>Recent Blog Posts</h3>
-            <ul>
-                <li><a href="blog/post1.html">The Rise of Technology in Education</a></li>
-                <li><a href="blog/post2.html">How to Balance College Life and Extracurriculars</a></li>
-                <li><a href="blog/post3.html">Reflections on My First Year at KSRM College</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>College News</h3>
-            <ul>
-                <li><a href="news/event1.html">Annual Sports Meet - Highlights and Winners</a></li>
-                <li><a href="news/event2.html">KSRM College Hosts Career Fair 2025</a></li>
-                <li><a href="news/event3.html">Guest Lecture on Artificial Intelligence in Engineering</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Featured Podcasts</h3>
-            <ul>
-                <li><a href="podcasts/podcast1.html">The Future of Engineering - A Discussion with Faculty</a></li>
-                <li><a href="podcasts/podcast2.html">Student Leadership at KSRM College</a></li>
-                <li><a href="podcasts/podcast3.html">The Importance of Mental Health Awareness in College</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 KSRM College Community Platform</p>
-            <ul class="footer-links">
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
+    <!-- Blog Section -->
+<section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">Recent Blog Posts</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?technology,education" alt="Technology in Education" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">The Rise of Technology in Education</h3>
+            <a href="blog/post1.html" class="text-indigo-600 hover:underline">Read More →</a>
+          </div>
         </div>
-    </footer>
-    
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?college,students" alt="Balance Life" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">How to Balance College Life and Extracurriculars</h3>
+            <a href="blog/post2.html" class="text-indigo-600 hover:underline">Read More →</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?university,student" alt="First Year" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Reflections on My First Year at KSRM College</h3>
+            <a href="blog/post3.html" class="text-indigo-600 hover:underline">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- News Section -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">College News</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?sports,event" alt="Sports Meet" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Annual Sports Meet - Highlights and Winners</h3>
+            <a href="news/event1.html" class="text-indigo-600 hover:underline">Read More →</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?career,education" alt="Career Fair" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">KSRM College Hosts Career Fair 2025</h3>
+            <a href="news/event2.html" class="text-indigo-600 hover:underline">Read More →</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?ai,lecture" alt="AI Lecture" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Guest Lecture on Artificial Intelligence</h3>
+            <a href="news/event3.html" class="text-indigo-600 hover:underline">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Podcast Section -->
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">Featured Podcasts</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?microphone,podcast" alt="Future of Engineering" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">The Future of Engineering</h3>
+            <a href="podcasts/podcast1.html" class="text-indigo-600 hover:underline">Listen Now →</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?leadership,students" alt="Leadership" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Student Leadership at KSRM College</h3>
+            <a href="podcasts/podcast2.html" class="text-indigo-600 hover:underline">Listen Now →</a>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?mental-health,college" alt="Mental Health Awareness" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">Mental Health Awareness in College</h3>
+            <a href="podcasts/podcast3.html" class="text-indigo-600 hover:underline">Listen Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+      
+  </main>
 
-    <script src="scripts/script.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 KSRM College Community Platform</p>
+      <ul class="footer-links">
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts/index.js"></script>
 </body>
 </html>

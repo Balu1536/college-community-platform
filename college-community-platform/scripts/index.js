@@ -46,3 +46,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  new Swiper(".blogSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+    loop: true,
+    pagination: { el: ".blog-preview .swiper-pagination", clickable: true }
+  });
+
+  new Swiper(".newsSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+    loop: true,
+    pagination: { el: ".news-preview .swiper-pagination", clickable: true }
+  });
+
+  new Swiper(".podcastSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+    loop: true,
+    pagination: { el: ".podcast-preview .swiper-pagination", clickable: true }
+  });
+</script>

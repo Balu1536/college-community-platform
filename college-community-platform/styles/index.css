@@ -1,3 +1,52 @@
+/* Mobile Navigation Styles */
+#menuToggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* When on mobile, hide the navigation menu by default */
+#navMenu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#navMenu li {
+    margin: 0 15px;
+}
+
+#navMenu.active {
+    display: block;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block;
+    }
+
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navMenu li {
+        margin: 10px 0;
+    }
+
+    #navMenu.active {
+        display: block;
+    }
+}
+
 /* General Reset */
 * {
     margin: 0;

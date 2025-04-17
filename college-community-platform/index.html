@@ -42,35 +42,77 @@
       </div>
     </section>
 
-    <!-- Blog Section -->
-<section class="py-12 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <h2 class="text-2xl font-bold text-gray-800 mb-6">Recent Blog Posts</h2>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?technology,education" alt="Technology in Education" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">The Rise of Technology in Education</h3>
-            <a href="blog/post1.html" class="text-indigo-600 hover:underline">Read More →</a>
+    <!-- Include this in your <head> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+<section class="blog-preview py-10 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <h3 class="text-2xl font-bold text-center mb-6 text-purple-700">Recent Blog Posts</h3>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Blog Card 1 -->
+        <div class="swiper-slide">
+          <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="https://source.unsplash.com/400x250/?technology,education" alt="Tech in Education" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">John Doe</span> · Apr 17, 2025</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">The Rise of Technology in Education</h3>
+              <a href="blog/post1.html" class="text-indigo-600 hover:underline">Read More →</a>
+            </div>
           </div>
         </div>
-        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?college,students" alt="Balance Life" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">How to Balance College Life and Extracurriculars</h3>
-            <a href="blog/post2.html" class="text-indigo-600 hover:underline">Read More →</a>
+
+        <!-- Blog Card 2 -->
+        <div class="swiper-slide">
+          <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="https://source.unsplash.com/400x250/?college,students" alt="Balancing College" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Priya Sharma</span> · Apr 15, 2025</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Balancing College Life & Extracurriculars</h3>
+              <a href="blog/post2.html" class="text-indigo-600 hover:underline">Read More →</a>
+            </div>
           </div>
         </div>
-        <div class="bg-white shadow-md rounded-2xl overflow-hidden">
-          <img src="https://source.unsplash.com/400x250/?university,student" alt="First Year" class="w-full h-48 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-800 mb-2">Reflections on My First Year at KSRM College</h3>
-            <a href="blog/post3.html" class="text-indigo-600 hover:underline">Read More →</a>
+
+        <!-- Blog Card 3 -->
+        <div class="swiper-slide">
+          <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+            <img src="https://source.unsplash.com/400x250/?college,reflection" alt="First Year Reflections" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Anil Reddy</span> · Apr 12, 2025</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Reflections on My First Year at KSRM</h3>
+              <a href="blog/post3.html" class="text-indigo-600 hover:underline">Read More →</a>
+            </div>
           </div>
         </div>
+
       </div>
+      <!-- Pagination (Optional) -->
+      <div class="swiper-pagination mt-4"></div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Swiper JS (just before </body>) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 16,
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
   
   <!-- News Section -->
   <section class="py-12 bg-gray-50">

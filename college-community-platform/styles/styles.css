@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Keep the font family as Arial */
     margin: 0;
     padding: 0;
     background-image: url('../images/background.jpg'); /* Optional background image */
@@ -8,26 +8,32 @@ body {
     background-attachment: fixed; /* Keep the background fixed during scrolling */
     color: #333; /* Ensure text is readable */
 }
+
 article {
     background: #ffffff;
     margin: 20px 0;
     padding: 15px;
     border-radius: 5px;
-    font-size: 24px; /* Set readable text size */
+    font-size: 18px; /* Adjusted to a more normal size for readability */
     line-height: 1.6; /* Improve readability with proper line spacing */
+    border: 1px solid #ccc; /* Optional: Add a border around articles */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
 }
 
 main {
     padding: 20px;
-    font-size: 24px; /* Ensure consistent text size for the main content */
+    font-size: 18px; /* Adjusted to a more normal size for consistency */
     line-height: 1.6; /* Improve readability */
+    background: rgba(255, 255, 255, 0.9); /* Optional: Add a slight background to main for contrast */
+    border-radius: 5px; /* Optional: Rounded corners for main content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
 }
-
 img {
-    max-width: 100%; /* Ensures images never exceed their container's width */
-    height: auto; /* Maintains the aspect ratio of the images */
+    width: 300px; /* Set a specific width */
+    height: 200px; /* Set a specific height */
+    object-fit: cover; /* Ensures the image covers the specified dimensions without distortion */
     display: block; /* Removes extra space below images */
-    margin: 0 auto; /* Centers images if they are block elements */
+    margin: 0 auto; /* Centers images horizontally */
     border-radius: 5px; /* Optional: Adds rounded corners to images */
 }
 
@@ -51,8 +57,8 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    font-size: 16px; /* Adjusted font size for navigation links */
 }
-
 
 footer {
     text-align: center;
@@ -62,4 +68,5 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 16px; /* Adjusted font size for footer */
 }

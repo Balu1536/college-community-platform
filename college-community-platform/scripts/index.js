@@ -6,16 +6,7 @@ function toggleNav() {
     }
 }
 
-// Function to handle click events for interactive links
-function showAlert(event) {
-    event.preventDefault();
-    alert("You clicked on: " + event.target.textContent);
 
-    const navMenu = document.getElementById('navMenu');
-    if (navMenu) {
-        navMenu.classList.remove('active'); // auto-close menu
-    }
-}
 
 // DOMContentLoaded ensures the HTML is fully loaded before scripts run
 document.addEventListener('DOMContentLoaded', () => {

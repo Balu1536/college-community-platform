@@ -95,6 +95,14 @@ footer {
     border-radius: 5px;
   }
   
+  .blog-image {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
 
 .thumbnail {
     width: 100%; /* Set the width to 100% of the parent container */

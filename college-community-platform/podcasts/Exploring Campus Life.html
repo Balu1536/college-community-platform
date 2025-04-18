@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Take a tour through the vibrant campus life at KSRM College."/>
+  <title>Exploring Campus Life</title>
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    .content {
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      padding: 10px 0;
+    }
+    .carousel img {
+      height: 200px;
+      width: auto;
+      border-radius: 8px;
+      scroll-snap-align: center;
+      flex-shrink: 0;
+    }
+    .carousel::-webkit-scrollbar {
+      height: 8px;
+    }
+    .carousel::-webkit-scrollbar-thumb {
+      background: #4CAF50;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Exploring Campus Life</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../news.html">College News</a></li>
+        <li><a href="../blog.html">Student Blog</a></li>
+        <li><a href="./podcasts.html">Podcast Directory</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Episode Overview</h2>
+    <audio controls>
+      <source src="path/to/exploring-campus-life.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <p>What’s it really like to be a student at KSRM? In this episode, we take you behind the scenes of daily campus life—from academic culture to extracurricular fun, student clubs, favorite hangout spots, and more.</p>
+
+    <h3>What You’ll Hear</h3>
+    <ul>
+      <li>Stories from first-year students adjusting to college life</li>
+      <li>Clips from club meetings, fests, and campus interviews</li>
+      <li>Faculty reflections on how student life has evolved</li>
+      <li>Tips from seniors on making the most of college years</li>
+    </ul>
+
+    <h3>Campus Life Gallery</h3>
+    <div class="carousel">
+      <img src="../images/campus1.jpg" alt="Students relaxing near the library">
+      <img src="../images/campus2.jpg" alt="Cultural Fest Performance">
+      <img src="../images/campus3.jpg" alt="Students in the lab">
+      <img src="../images/campus4.jpg" alt="Sports event at KSRM">
+      <img src="../images/campus5.jpg" alt="Club meetup discussion">
+    </div>
+
+    <h3>Listen Now</h3>
+    <p>Step into the heart of student life at KSRM. <a href="path/to/exploring-campus-life.mp3">Click here to download the episode.</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KSRM College Community Platform</p>
+  </footer>
+</body>
+</html>

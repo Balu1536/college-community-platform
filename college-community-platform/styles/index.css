@@ -26,6 +26,14 @@
     text-align: center;
 }
 
+
+.thumbnail {
+    width: 100%; /* Set the width to 100% of the parent container */
+    height: 150px; /* Set a fixed height for the thumbnail */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     #menuToggle {

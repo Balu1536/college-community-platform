@@ -95,3 +95,9 @@ footer {
     border-radius: 5px;
   }
   
+
+.thumbnail {
+    width: 100%; /* Set the width to 100% of the parent container */
+    height: 150px; /* Set a fixed height for the thumbnail */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}

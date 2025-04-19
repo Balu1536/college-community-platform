@@ -6,7 +6,10 @@ function toggleNav() {
     }
 }
 
-
+document.getElementById("menuToggle").addEventListener("click", function () {
+    document.getElementById("navMenu").classList.toggle("active");
+  });
+  
 
 // DOMContentLoaded ensures the HTML is fully loaded before scripts run
 document.addEventListener('DOMContentLoaded', () => {

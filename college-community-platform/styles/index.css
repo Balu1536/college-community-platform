@@ -10,16 +10,18 @@
 }
 
 /* When on mobile, hide the navigation menu by default */
-#navMenu {
+.nav-menu {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
+    margin-top: 10px;
 }
 
-#navMenu li {
+.nav-menu li {
     margin: 0 15px;
 }
+
 
 #navMenu.active {
     display: block;
@@ -27,11 +29,22 @@
 }
 
 
-.thumbnail {
-    width: 100%; /* Set the width to 100% of the parent container */
-    height: 150px; /* Set a fixed height for the thumbnail */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-}
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease;
+  }
+
+
+  .nav-menu li a:hover {
+    background-color: #ae00f3;
+    border-radius: 5px;
+  }
+
+
+
 
 
 /* Mobile responsiveness */
@@ -40,18 +53,22 @@
         display: block;
     }
 
-    #navMenu {
+    .nav-menu {
         display: none;
         flex-direction: column;
         width: 100%;
+        align-items: center;
+        background-color: #282c34;
+        width: 100%;
+        padding: 10px 0;
     }
 
-    #navMenu li {
+    #nav-menu li {
         margin: 10px 0;
     }
 
-    #navMenu.active {
-        display: block;
+    #nav-menu.active {
+        display: flex;
     }
 }
 
@@ -284,4 +301,11 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   }
+
+
+  .thumbnail {
+    width: 100%; /* Set the width to 100% of the parent container */
+    height: 150px; /* Set a fixed height for the thumbnail */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
   

@@ -7,11 +7,11 @@
 
 /* Variables */
 :root {
-    --primary-color: #ae00f3;
-    --secondary-color: #282c34;
-    --light-color: rgba(244, 244, 244, 0.9); /* Light color with transparency */
+    --primary-color: #1815f1;
+    --secondary-color: #5111f5d3;
+    --light-color: rgba(244, 244, 244, 0.107); /* Light color with transparency */
     --text-color: #333;
-    --hover-color: #c800e6;
+    --hover-color: #09abf1f2;
 }
 
 /* Body and Typography */
@@ -60,15 +60,14 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 10px 20px; /* Adds padding to make the clickable text larger */
-    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+    padding: 5px 15px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: rgb(7, 239, 239); /* Transparent background with a slight tint */
-    color: var(--primary-color); /* Change text color on hover */
-    border-color: var(--primary-color); /* Border color changes on hover */
-    transform: scale(1.1); /* Slightly enlarges the text on hover */
+    background-color: var(--primary-color);
+    border-radius: 5px;
 }
 
 /* Mobile Menu Toggle */

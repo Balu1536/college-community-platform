@@ -7,9 +7,9 @@
 
 /* Variables */
 :root {
-    --primary-color: #1815f1;
+    --primary-color: #15f18345;
     --secondary-color: #5111f5d3;
-    --light-color: rgba(244, 244, 244, 0.107); /* Light color with transparency */
+    --light-color: rgba(244, 244, 244, 0.073); /* Light color with transparency */
     --text-color: #333;
     --hover-color: #09abf1f2;
 }
@@ -31,7 +31,7 @@ h1, h2, h3 {
 /* Header */
 header {
     background-color: var(--secondary-color);
-    color: rgba(255, 255, 255, 0.056);
+    color: rgba(255, 255, 255, 0.979);
     padding: 20px 0;
     text-align: center;
     border-radius: 8px; /* Rounded header */

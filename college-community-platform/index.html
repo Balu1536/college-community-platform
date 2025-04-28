@@ -6,6 +6,43 @@
   <meta name="description" content="KSRM College Community Platform: Your hub for student blogs, news, and podcasts." />
   <title>KSRM College Community Platform</title>
   <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+    /* Swiper Container for Horizontal Scroll */
+    .horizontal-scroll {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .card {
+      flex: 0 0 auto; /* Prevents cards from shrinking */
+      width: 300px;   /* Adjust to your desired width */
+      margin-right: 16px; /* Space between the cards */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Optional: Make swiper pagination dots appear at the bottom */
+    .swiper-pagination {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -19,7 +56,7 @@
           <li><a href="podcasts.html">Podcast Directory</a></li>
         </ul>
         <button id="darkModeToggle" style="margin-left: 10px; padding: 5px 10px;">
-          🌙 Toggle Dark Mode
+          🌙Dark Mode
         </button>        
       </nav>
     </div>
@@ -39,8 +76,6 @@
           <h3>About Us</h3>
           <p>The KSRM College Community Platform fosters a vibrant community among students, faculty, and alumni. Our mission is to offer a space for sharing stories, updates, and insights through blogs, news, and podcasts.</p>
           <p>Students can share personal journeys and achievements in the <strong>Student Blog</strong> section, stay informed via the <strong>College News</strong> portal, and enjoy insightful discussions in the <strong>Podcast Directory</strong>.</p>
-          <p>We also promote personal and professional growth through regular workshops, webinars, and networking events.</p>
-          <p>Join us in building a collaborative and supportive environment at KSRM College!</p>
         </article>
       </div>
     </section>
@@ -49,21 +84,21 @@
     <section class="blog-preview py-10 bg-gray-50">
       <div class="container mx-auto px-4">
         <h3 class="text-2xl font-bold text-center mb-6 text-purple-700">Recent Blog Posts</h3>
-        <div class="horizontal-scroll">
+        <div class="horizontal-scroll blogSwiper">
           <div class="card">
             <img src="images/technology-education.jpg" alt="Tech in Education" class="thumbnail">
             <div class="p-4">
               <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">John Doe</span> · Apr 17, 2025</p>
               <h3 class="text-lg font-semibold text-gray-800 mb-2">The Rise of Technology in Education</h3>
-              <a href="blogs/Tech in Education.html" class="text-indigo-600 hover:underline">Read More →</a>
+              <a href="blogs/Tech_in_Education.html" class="text-indigo-600 hover:underline">Read More →</a>
             </div>
           </div>
           <div class="card">
-            <img src="images/college life.jpg" alt="Balancing College" class="thumbnail">
+            <img src="images/college-life.jpg" alt="Balancing College" class="thumbnail">
             <div class="p-4">
               <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Priya Sharma</span> · Apr 15, 2025</p>
               <h3 class="text-lg font-semibold text-gray-800 mb-2">Balancing College Life & Extracurriculars</h3>
-              <a href="blogs/balancing college life.html" class="text-indigo-600 hover:underline">Read More →</a>
+              <a href="blogs/balancing_college_life.html" class="text-indigo-600 hover:underline">Read More →</a>
             </div>
           </div>
           <div class="card">
@@ -71,7 +106,7 @@
             <div class="p-4">
               <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Anil Reddy</span> · Apr 12, 2025</p>
               <h3 class="text-lg font-semibold text-gray-800 mb-2">Reflections on My First Year at KSRM</h3>
-              <a href="blogs/reflections on my first year.html" class="text-indigo-600 hover:underline">Read More →</a>
+              <a href="blogs/reflections_on_my_first_year.html" class="text-indigo-600 hover:underline">Read More →</a>
             </div>
           </div>
         </div>
@@ -82,7 +117,7 @@
     <section class="news-section py-10 bg-white">
       <div class="container mx-auto px-4">
         <h3 class="text-2xl font-bold text-center mb-6 text-blue-700">College News</h3>
-        <div class="horizontal-scroll">
+        <div class="horizontal-scroll newsSwiper">
           <div class="card">
             <img src="images/salesforce-certification.jpg" alt="Salesforce" class="thumbnail">
             <div class="p-4">
@@ -115,7 +150,7 @@
     <section class="podcast-section py-10 bg-gray-100">
       <div class="container mx-auto px-4">
         <h3 class="text-2xl font-bold text-center mb-6 text-green-700">Featured Podcasts</h3>
-        <div class="horizontal-scroll">
+        <div class="horizontal-scroll podcastSwiper">
           <div class="card">
             <img src="images/podcast-student-talks.jpg" alt="Student Talks" class="thumbnail">
             <div class="p-4">
@@ -142,7 +177,7 @@
       <p>&copy; 2025 KSRM College Community Platform</p>
       <ul class="footer-links">
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="about.html">Terms of Service</a></li>
         <li><a href="privacy.html">Privacy Policy</a></li>
       </ul>
     </div>
@@ -151,34 +186,77 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
-    // Blog Swiper Initialization
+    // Blog Swiper Initialization for Horizontal Scrolling with Auto-scroll
     new Swiper(".blogSwiper", {
       slidesPerView: 1,
       spaceBetween: 16,
-      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
       loop: true,
-      pagination: { el: ".swiper-pagination", clickable: true }
+      autoplay: {
+        delay: 3000, // Auto-scroll delay
+        disableOnInteraction: false, // Keeps autoplay active even after interaction
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      direction: 'horizontal',
     });
 
     // News Swiper Initialization
     new Swiper(".newsSwiper", {
       slidesPerView: 1,
       spaceBetween: 16,
-      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
       loop: true,
-      pagination: { el: ".swiper-pagination", clickable: true }
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      direction: 'horizontal',
     });
 
     // Podcast Swiper Initialization
     new Swiper(".podcastSwiper", {
       slidesPerView: 1,
       spaceBetween: 16,
-      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
       loop: true,
-      pagination: { el: ".swiper-pagination", clickable: true }
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      direction: 'horizontal',
     });
   </script>
-
-  <script src="scripts/index.js"></script>
 </body>
 </html>

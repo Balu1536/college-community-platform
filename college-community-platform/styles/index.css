@@ -31,7 +31,7 @@ h1, h2, h3 {
 /* Header */
 header {
     background-color: var(--secondary-color);
-    color: white;
+    color: rgba(255, 255, 255, 0.056);
     padding: 20px 0;
     text-align: center;
     border-radius: 8px; /* Rounded header */
@@ -181,7 +181,7 @@ h2 {
 }
 
 h3 {
-    color: #e307f7;
+    color: #2109a9;
     font-size: 1.5rem;
     margin-bottom: 15px;
 }
@@ -314,12 +314,12 @@ footer {
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #1e1e1e;
+    background-color: #0392ff;
     color: #e0e0e0;
 }
 
 body.dark-mode main {
-    background-color: #2a2a2a;
+    background-color: #025dfbe9;
 }
 
 body.dark-mode header,

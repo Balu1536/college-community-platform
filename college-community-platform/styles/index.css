@@ -101,6 +101,11 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
+.nav-menu li a:hover {
+    background-color:rgb(rgb(247, 244, 244), rgb(243, 249, 243), rgba(237, 237, 241, 0.04));
+    border-radius: 5px;
+}
+
 #navMenu.active {
     display: block;
     text-align: center;

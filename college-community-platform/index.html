@@ -18,6 +18,9 @@
           <li><a href="news.html">College News</a></li>
           <li><a href="podcasts.html">Podcast Directory</a></li>
         </ul>
+        <button id="darkModeToggle" style="margin-left: 10px; padding: 5px 10px;">
+          🌙 Toggle Dark Mode
+        </button>        
       </nav>
     </div>
   </header>
@@ -42,175 +45,96 @@
       </div>
     </section>
 
-    <!-- Include this in your <head> -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-
-
-
-<section class="blog-preview py-10 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl font-bold text-center mb-6 text-purple-700">Recent Blog Posts</h3>
-
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-
-        <!-- Blog Card 1 -->
-<div class="swiper-slide">
-  <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-      <img src="images/technology-education.jpg" alt="Tech in Education" class="thumbnail">
-      <div class="p-4">
-          <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">John Doe</span> · Apr 17, 2025</p>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">The Rise of Technology in Education</h3>
-          <a href="blogs/Tech in Education.html" class="text-indigo-600 hover:underline">Read More →</a>
+    <!-- Blog Preview Section -->
+    <section class="blog-preview py-10 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-center mb-6 text-purple-700">Recent Blog Posts</h3>
+        <div class="horizontal-scroll">
+          <div class="card">
+            <img src="images/technology-education.jpg" alt="Tech in Education" class="thumbnail">
+            <div class="p-4">
+              <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">John Doe</span> · Apr 17, 2025</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">The Rise of Technology in Education</h3>
+              <a href="blogs/Tech in Education.html" class="text-indigo-600 hover:underline">Read More →</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/college life.jpg" alt="Balancing College" class="thumbnail">
+            <div class="p-4">
+              <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Priya Sharma</span> · Apr 15, 2025</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Balancing College Life & Extracurriculars</h3>
+              <a href="blogs/balancing college life.html" class="text-indigo-600 hover:underline">Read More →</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/reflecting.jpg" alt="First Year Reflections" class="thumbnail">
+            <div class="p-4">
+              <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Anil Reddy</span> · Apr 12, 2025</p>
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Reflections on My First Year at KSRM</h3>
+              <a href="blogs/reflections on my first year.html" class="text-indigo-600 hover:underline">Read More →</a>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-</div>
+    </section>
 
-<!-- Blog Card 2 -->
-<div class="swiper-slide">
-  <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-      <img src="images/college life.jpg" alt="Balancing College" class="thumbnail">
-      <div class="p-4">
-          <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Priya Sharma</span> · Apr 15, 2025</p>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Balancing College Life & Extracurriculars</h3>
-          <a href="blogs/balancing college life.html" class="text-indigo-600 hover:underline">Read More →</a>
+    <!-- College News Section -->
+    <section class="news-section py-10 bg-white">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-center mb-6 text-blue-700">College News</h3>
+        <div class="horizontal-scroll">
+          <div class="card">
+            <img src="images/salesforce-certification.jpg" alt="Salesforce" class="thumbnail">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Salesforce Certification Achievements</h3>
+              <p class="text-sm text-gray-500 mb-1">Apr 10, 2025</p>
+              <a href="news/salesforce.html" class="text-blue-600 hover:underline">Read More →</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/srfmtti.jpg" alt="SRFMTTI" class="thumbnail">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Students Visit SRFMTTI</h3>
+              <p class="text-sm text-gray-500 mb-1">Apr 08, 2025</p>
+              <a href="news/srfmtti.html" class="text-blue-600 hover:underline">Read More →</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/interior-design.jpg" alt="Interior Design" class="thumbnail">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Interior Design Seminar Held</h3>
+              <p class="text-sm text-gray-500 mb-1">Apr 06, 2025</p>
+              <a href="news/interior.html" class="text-blue-600 hover:underline">Read More →</a>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-</div>
+    </section>
 
-<!-- Blog Card 3 -->
-<div class="swiper-slide">
-  <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-      <img src="images/reflecting.jpg" alt="First Year Reflections" class="thumbnail">
-      <div class="p-4">
-          <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Anil Reddy</span> · Apr 12, 2025</p>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Reflections on My First Year at KSRM</h3>
-          <a href="blogs/reflections on my first year.html" class="text-indigo-600 hover:underline">Read More →</a>
+    <!-- Podcast Section -->
+    <section class="podcast-section py-10 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-center mb-6 text-green-700">Featured Podcasts</h3>
+        <div class="horizontal-scroll">
+          <div class="card">
+            <img src="images/podcast-student-talks.jpg" alt="Student Talks" class="thumbnail">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Student Talks: Life at KSRM</h3>
+              <p class="text-sm text-gray-500 mb-1">Apr 01, 2025</p>
+              <a href="podcasts/student-talks.html" class="text-green-600 hover:underline">Listen →</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/podcast-entrepreneur.jpg" alt="Entrepreneurship" class="thumbnail">
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Entrepreneurship from Campus</h3>
+              <p class="text-sm text-gray-500 mb-1">Mar 28, 2025</p>
+              <a href="podcasts/entrepreneurship.html" class="text-green-600 hover:underline">Listen →</a>
+            </div>
+          </div>
+        </div>
       </div>
-  </div>
-</div>
-
-
-      <!-- Pagination (Optional) -->
-      <div class="swiper-pagination mt-4"></div>
-    </div>
-  </div>
-</section>
-
-<!-- Swiper JS (just before </body>) -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    breakpoints: {
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script>
-
-  
-<section class="news-preview py-10 bg-white">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl font-bold text-center mb-6 text-blue-600">College News</h3>
-
-    <div class="swiper newsSwiper">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-            <img src="images/konnect2k25-poster.jpg" alt="konnect2k25" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Published Apr 7, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">KONNECT 2K25 & KSRM Trophy Announced</h3>
-              <a href="newsPage/konnect2k25.html" class="text-blue-600 hover:underline">Read More →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-            <img src="images/sivananda-smaranam.jpg" alt="sivananda-smaranam" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Published Apr 5, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Sivananda Smaranam Tickets Available</h3>
-              <a href="newsPage/sivananda-smaranam.html" class="text-blue-600 hover:underline">Read More →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-            <img src="images/live-band-poster.jpg" alt="live band" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Published Apr 7, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Live Band DJ Night with Hanuman & Haripriya</h3>
-              <a href="newsPage/live-band.html" class="text-blue-600 hover:underline">Read More →</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-pagination mt-4"></div>
-    </div>
-  </div>
-</section>
-
-  
-<section class="podcast-preview py-10 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl font-bold text-center mb-6 text-green-700">Featured Podcasts</h3>
-
-    <div class="swiper podcastSwiper">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="swiper-slide w-[300px] md:w-[350px] flex-shrink-0">
-            <img src="images/future of engineering.jpg" alt="Future of Engineering" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Host: Dr. Kumar · Apr 9, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">The Future of Engineering - Faculty Insights</h3>
-              <a href="podcasts/The Future of Engineering - Faculty Insights.html" class="text-green-600 hover:underline">Listen Now →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="swiper-slide w-[300px] md:w-[350px] flex-shrink-0">
-            <img src="images/student success.jpg" alt="Leadership Talk" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Host: KSRM Media Club · Apr 6, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Student Success Stories</h3>
-              <a href="podcasts/Student Success Stories.html" class="text-green-600 hover:underline">Listen Now →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-        <div class="swiper-slide w-[300px] md:w-[350px] flex-shrink-0">
-            <img src="images/mental health for students.jpg" alt="Mental Health" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Host: Counseling Cell · Apr 3, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Importance of Mental Health in College</h3>
-              <a href="podcasts/The Importance of Mental Health in College.html" class="text-green-600 hover:underline">Listen Now →</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-pagination mt-4"></div>
-    </div>
-  </div>
-</section>
-
-  
-      
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -223,33 +147,38 @@
       </ul>
     </div>
   </footer>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-  new Swiper(".blogSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-    loop: true,
-    pagination: { el: ".blog-preview .swiper-pagination", clickable: true }
-  });
 
-  new Swiper(".newsSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-    loop: true,
-    pagination: { el: ".news-preview .swiper-pagination", clickable: true }
-  });
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Blog Swiper Initialization
+    new Swiper(".blogSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+      loop: true,
+      pagination: { el: ".swiper-pagination", clickable: true }
+    });
 
-  new Swiper(".podcastSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-    loop: true,
-    pagination: { el: ".podcast-preview .swiper-pagination", clickable: true }
-  });
-</script>
+    // News Swiper Initialization
+    new Swiper(".newsSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+      loop: true,
+      pagination: { el: ".swiper-pagination", clickable: true }
+    });
+
+    // Podcast Swiper Initialization
+    new Swiper(".podcastSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+      loop: true,
+      pagination: { el: ".swiper-pagination", clickable: true }
+    });
+  </script>
+
   <script src="scripts/index.js"></script>
 </body>
 </html>

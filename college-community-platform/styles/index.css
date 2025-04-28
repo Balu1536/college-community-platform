@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 
 .nav-menu li a:hover {
-    background-color:rgb(rgb(247, 244, 244), rgb(243, 249, 243), rgba(237, 237, 241, 0.04));
+    background-color:rgb(rgb(6, 243, 22), rgb(243, 249, 243), rgba(237, 237, 241, 0.04));
     border-radius: 5px;
 }
 

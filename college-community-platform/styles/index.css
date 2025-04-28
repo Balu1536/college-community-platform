@@ -7,7 +7,7 @@
 
 /* Variables */
 :root {
-    --primary-color: #15f18345;
+    --primary-color: #1520f1e9;
     --secondary-color: #5111f5d3;
     --light-color: rgba(244, 244, 244, 0.073); /* Light color with transparency */
     --text-color: #333;
@@ -101,11 +101,6 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.nav-menu li a:hover {
-    background-color: var(--primary-color);
-    border-radius: 5px;
-}
-
 #navMenu.active {
     display: block;
     text-align: center;
@@ -169,7 +164,7 @@ main {
     max-width: 1100px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    background-color: rgba(255, 255, 255, 0.295); /* Transparent background */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }

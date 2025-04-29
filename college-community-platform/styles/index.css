@@ -262,22 +262,7 @@ ul li a:hover {
     object-fit: cover;
 }
 
-/* FAQ Section */
-.faq-question {
-    background: none;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    text-align: left;
-    width: 100%;
-    padding: 10px 0;
-    font-weight: bold;
-}
 
-.faq-answer {
-    display: none;
-    padding: 10px 0;
-}
 
 /* Footer */
 footer {

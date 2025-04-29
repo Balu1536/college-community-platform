@@ -51,6 +51,8 @@
   </header>
 
   <main class="main-content">
+
+    <!-- About Section -->
     <section class="intro">
       <div class="container">
         <h2 class="highlight">Welcome to the KSRM College Community Platform!</h2>
@@ -62,220 +64,195 @@
       <div class="container">
         <article>
           <h3>About Us</h3>
-          <p>The KSRM College Community Platform fosters a vibrant community among students, faculty, and alumni. Our mission is to offer a space for sharing stories, updates, and insights through blogs, news, and podcasts.</p>
-          <p>Students can share personal journeys and achievements in the <strong>Student Blog</strong> section, stay informed via the <strong>College News</strong> portal, and enjoy insightful discussions in the <strong>Podcast Directory</strong>.</p>
-          <p>We also promote personal and professional growth through regular workshops, webinars, and networking events.</p>
-          <p>Join us in building a collaborative and supportive environment at KSRM College!</p>
+          <p>The KSRM College Community Platform fosters a vibrant community among students, faculty, and alumni...</p>
         </article>
       </div>
     </section>
 
-    <!-- Include this in your <head> -->
+    <!-- Recent Blog Posts -->
+    <section class="blog-preview py-10 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-center mb-6 text-purple-700">Recent Blog Posts</h3>
+        <div class="swiper blogSwiper">
+          <div class="swiper-wrapper">
 
+            <!-- Blog Card 1 -->
+            <div class="swiper-slide">
+              <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/technology-education.jpg" class="thumbnail" alt="Tech in Education">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">By John Doe · Apr 17, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">The Rise of Technology in Education</h3>
+                  <a href="blogs/Tech in Education.html" class="text-indigo-600 hover:underline"><button class="cool-button">Read More →</button></a>
+                </div>
+              </div>
+            </div>
 
+            <!-- Blog Card 2 -->
+            <div class="swiper-slide">
+              <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/college life.jpg" class="thumbnail" alt="Balancing College">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">By Priya Sharma · Apr 15, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">Balancing College Life & Extracurriculars</h3>
+                  <a href="blogs/balancing college life.html" class="text-indigo-600 hover:underline"><button class="cool-button">Read More →</button></a>
+                </div>
+              </div>
+            </div>
 
-<section class="blog-preview py-10 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl font-bold text-center mb-6 text-purple-700">Recent Blog Posts</h3>
+            <!-- Blog Card 3 -->
+            <div class="swiper-slide">
+              <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/reflecting.jpg" class="thumbnail" alt="First Year Reflections">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">By Anil Reddy · Apr 12, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">Reflections on My First Year at KSRM</h3>
+                  <a href="blogs/reflections on my first year.html" class="text-indigo-600 hover:underline"><button class="cool-button">Read More →</button></a>
+                </div>
+              </div>
+            </div>
 
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-
-        <!-- Blog Card 1 -->
-<div class="swiper-slide">
-  <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-      <img src="images/technology-education.jpg" alt="Tech in Education" class="thumbnail">
-      <div class="p-4">
-          <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">John Doe</span> · Apr 17, 2025</p>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">The Rise of Technology in Education</h3>
-          <a href="blogs/Tech in Education.html" class="text-indigo-600 hover:underline"><button class="cool-button">Read More →</button></a>
+          </div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
       </div>
-  </div>
-</div>
+    </section>
 
-<!-- Blog Card 2 -->
-<div class="swiper-slide">
-  <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-      <img src="images/college life.jpg" alt="Balancing College" class="thumbnail">
-      <div class="p-4">
-          <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Priya Sharma</span> · Apr 15, 2025</p>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Balancing College Life & Extracurriculars</h3>
-          <a href="blogs/balancing college life.html" class="text-indigo-600 hover:underline"><button class="cool-button">Read More →</button></a>
+    <!-- College News -->
+    <section class="news-preview py-10 bg-white">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-center mb-6 text-blue-600">College News</h3>
+        <div class="swiper newsSwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/konnect2k25-poster.jpg" class="thumbnail" alt="Konnect">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">Published Apr 7, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">KONNECT 2K25 & KSRM Trophy Announced</h3>
+                  <a href="newsPage/konnect2k25.html" class="text-blue-600 hover:underline"><button class="cool-button">Read More →</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/sivananda-smaranam.jpg" class="thumbnail" alt="Sivananda">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">Published Apr 5, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">Sivananda Smaranam Tickets Available</h3>
+                  <a href="newsPage/sivananda-smaranam.html" class="text-blue-600 hover:underline"><button class="cool-button">Read More →</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/live-band-poster.jpg" class="thumbnail" alt="Live Band">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">Published Apr 7, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">Live Band DJ Night with Hanuman & Haripriya</h3>
+                  <a href="newsPage/live-band.html" class="text-blue-600 hover:underline"><button class="cool-button">Read More →</button></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
       </div>
-  </div>
-</div>
+    </section>
 
-<!-- Blog Card 3 -->
-<div class="swiper-slide">
-  <div class="bg-white shadow-md rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-      <img src="images/reflecting.jpg" alt="First Year Reflections" class="thumbnail">
-      <div class="p-4">
-          <p class="text-sm text-gray-500 mb-1">By <span class="font-medium text-gray-700">Anil Reddy</span> · Apr 12, 2025</p>
-          <h3 class="text-lg font-semibold text-gray-800 mb-2">Reflections on My First Year at KSRM</h3>
-          <a href="blogs/reflections on my first year.html" class="text-indigo-600 hover:underline"><button class="cool-button">Read More →</button></a>
+    <!-- Podcasts -->
+    <section class="podcast-preview py-10 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-bold text-center mb-6 text-green-700">Featured Podcasts</h3>
+        <div class="swiper podcastSwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/future of engineering.jpg" class="thumbnail" alt="Future of Engineering">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">Host: Dr. Kumar · Apr 9, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">The Future of Engineering - Faculty Insights</h3>
+                  <a href="podcasts/The Future of Engineering - Faculty Insights.html" class="text-green-600 hover:underline"><button class="cool-button">Listen Now →</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/student success.jpg" class="thumbnail" alt="Student Success">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">Host: KSRM Media Club · Apr 6, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">Student Success Stories</h3>
+                  <a href="podcasts/Student Success Stories.html" class="text-green-600 hover:underline"><button class="cool-button">Listen Now →</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300">
+                <img src="images/mental health for students.jpg" class="thumbnail" alt="Mental Health">
+                <div class="p-4">
+                  <p class="text-sm text-gray-500 mb-1">Host: Counseling Cell · Apr 3, 2025</p>
+                  <h3 class="text-lg font-semibold text-gray-800">Importance of Mental Health in College</h3>
+                  <a href="podcasts/The Importance of Mental Health in College.html" class="text-green-600 hover:underline"><button class="cool-button">Listen Now →</button></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination mt-4"></div>
+        </div>
       </div>
-  </div>
-</div>
+    </section>
 
-
-      <!-- Pagination (Optional) -->
-      <div class="swiper-pagination mt-4"></div>
-    </div>
-  </div>
-</section>
-
-<!-- Swiper JS (just before </body>) -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    breakpoints: {
-      640: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 },
-    },
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script>
-
-  
-<section class="news-preview py-10 bg-white">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl font-bold text-center mb-6 text-blue-600">College News</h3>
-
-    <div class="swiper newsSwiper">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-            <img src="images/konnect2k25-poster.jpg" alt="konnect2k25" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Published Apr 7, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">KONNECT 2K25 & KSRM Trophy Announced</h3>
-              <a href="newsPage/konnect2k25.html" class="text-blue-600 hover:underline"><button class="cool-button">Read More →</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-            <img src="images/sivananda-smaranam.jpg" alt="sivananda-smaranam" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Published Apr 5, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Sivananda Smaranam Tickets Available</h3>
-              <a href="newsPage/sivananda-smaranam.html" class="text-blue-600 hover:underline"><button class="cool-button">Read More →</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="bg-gray-50 rounded-2xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-            <img src="images/live-band-poster.jpg" alt="live band" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Published Apr 7, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Live Band DJ Night with Hanuman & Haripriya</h3>
-              <a href="newsPage/live-band.html" class="text-blue-600 hover:underline"><button class="cool-button">Read More →</button></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-pagination mt-4"></div>
-    </div>
-  </div>
-</section>
-
-  
-<section class="podcast-preview py-10 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <h3 class="text-2xl font-bold text-center mb-6 text-green-700">Featured Podcasts</h3>
-
-    <div class="swiper podcastSwiper">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="swiper-slide w-[300px] md:w-[350px] flex-shrink-0">
-            <img src="images/future of engineering.jpg" alt="Future of Engineering" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Host: Dr. Kumar · Apr 9, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">The Future of Engineering - Faculty Insights</h3>
-              <a href="podcasts/The Future of Engineering - Faculty Insights.html" class="text-green-600 hover:underline"><button class="cool-button">Listen Now →</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="swiper-slide w-[300px] md:w-[350px] flex-shrink-0">
-            <img src="images/student success.jpg" alt="Leadership Talk" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Host: KSRM Media Club · Apr 6, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Student Success Stories</h3>
-              <a href="podcasts/Student Success Stories.html" class="text-green-600 hover:underline"><button class="cool-button">Listen Now →</button></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-        <div class="swiper-slide w-[300px] md:w-[350px] flex-shrink-0">
-            <img src="images/mental health for students.jpg" alt="Mental Health" class="thumbnail">
-            <div class="p-4">
-              <p class="text-sm text-gray-500 mb-1">Host: Counseling Cell · Apr 3, 2025</p>
-              <h3 class="text-lg font-semibold text-gray-800 mb-2">Importance of Mental Health in College</h3>
-              <a href="podcasts/The Importance of Mental Health in College.html" class="text-green-600 hover:underline"><button class="cool-button">Listen Now →</button></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="swiper-pagination mt-4"></div>
-    </div>
-  </div>
-</section>
-
-  
-      
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <p>&copy; 2025 KSRM College Community Platform</p>
-      <center><ul class="footer-links">
+      <ul class="footer-links">
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="about.html">Terms of Service</a></li>
-      </ul></center>
+      </ul>
     </div>
   </footer>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script>
-  new Swiper(".blogSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-    loop: true,
-    pagination: { el: ".blog-preview .swiper-pagination", clickable: true }
-  });
 
-  new Swiper(".newsSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-    loop: true,
-    pagination: { el: ".news-preview .swiper-pagination", clickable: true }
-  });
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".blogSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+      loop: true,
+      pagination: { el: ".blog-preview .swiper-pagination", clickable: true },
+      autoplay: { delay: 3000, disableOnInteraction: false }
+    });
 
-  new Swiper(".podcastSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 16,
-    breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
-    loop: true,
-    pagination: { el: ".podcast-preview .swiper-pagination", clickable: true }
-  });
-</script>
+    new Swiper(".newsSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+      loop: true,
+      pagination: { el: ".news-preview .swiper-pagination", clickable: true }
+    });
+
+    new Swiper(".podcastSwiper", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      breakpoints: { 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+      loop: true,
+      pagination: { el: ".podcast-preview .swiper-pagination", clickable: true }
+    });
+  </script>
+
   <script src="scripts/index.js"></script>
 </body>
+
 </html>
